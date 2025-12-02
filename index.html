@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js" defer></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="content">
+        <div class="main">
+          <div class="sec1">
+            <!-- DATE SELECTS -->
+            <div class="row">
+              <div class="label">
+                <h5>DAY</h5>
+                <select id="day" >
+                  <option value="" disabled selected>DD</option>
+                </select>
+              </div>
+               <div class="label">
+                <h5>MONTH</h5>
+                <select id="month">
+                  <option value="" disabled selected>MM</option>
+                </select>
+              </div>
+              <div class="label">
+                <h5>YEAR</h5>
+                <select id="year">
+                  <option value="" disabled selected>YYYY</option>
+                </select>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="sec2">
+            <img src="./assets/images/icon-arrow.svg" style="padding:10px
+              15px;font-size:16px;border-radius:50%;border:none;background:#7a42ff;color:white;cursor:pointer;"
+              alt=" arrow" <button onclick="calculateAge()" style="
+                  padding: 10px 15px;
+                  font-size: 16px;
+                  border-radius: 6px;
+                  border: none;
+                  background: #7a42ff;
+                  color: white;
+                  cursor: pointer;
+                ">
+            </button>
+            
+          </div>
+          <div class="sec3">
+            <div class="result">
+              <div><span class="purple" id="rYears">--</span> years</div>
+              <div><span class="purple" id="rMonths">--</span> months</div>
+              <div><span class="purple" id="rDays">--</span> days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://facebook.com/emmanuelfadayomiofficial" target="_blank">Emmycodes</a>.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
